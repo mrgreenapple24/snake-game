@@ -1,0 +1,40 @@
+/* Basic reset and background */
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Game canvas */
+canvas {
+  background-color: #222;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+/* Control buttons */
+.controls {
+  margin-top: 15px;
+}
+
+/* Buttons styling */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+  border: 1px solid #888;
+}
+
+/* Score display */
+#scoreDisplay {
+  font-size: 20px;
+  margin-top: 10px;
+}
