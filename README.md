@@ -47,16 +47,13 @@ snake-game/
 ## 🚀 Features
 
 - Real-time keyboard control using arrow keys
-- In-page **score tracking**
-- Visual **"Game Over"** message (no alerts!)
-- **Start** and **Restart** buttons
+- In-page **score tracking** and a **high score display** using `localStorage`
 - Grid-based canvas rendering using `<canvas>`
 
 ---
 
 ## 📦 TODO / Improvements
 
-- Save and display **high score** using `localStorage`
 - Add **sound effects** for eating and game over
 - Make the canvas **responsive for mobile**
 - Add **touch controls** for swipe gestures

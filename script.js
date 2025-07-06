@@ -5,6 +5,10 @@ const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 const scoreDisplay = document.getElementById("scoreDisplay");
 const gameOverMessage = document.getElementById("gameOver");
+const highScoreDisplay = document.getElementById("highScore");
+
+// Load Saved High Score or Initialize to 0
+let highScore = parseInt(localStorage.getItem("snakeHighScore")) || 0;
 
 // Grid setup
 const gridSize = 20; // Each tile is 20x20 pixels
@@ -43,6 +47,7 @@ function initGame() {
 // update the score
 function updateScore() {
   scoreDisplay.innerText = `Score: ${score}`;
+  highScoreDisplay.innerText = `🏆 High Score: ${highScore}`;
 }
 
 // draws a tile with given color
@@ -68,7 +73,13 @@ function drawGame() {
   if (hitWall || hitSelf) {
     clearInterval(gameInterval); // Stop game loop
     gameRunning = false;
+
     gameOverMessage.style.display = "block"; // Show Game Over message
+
+    if (score > highScore) {
+      highScore = score;
+      localStorage.setItem("snakeHighScore", highScore);
+    }
     return;
   }
 
