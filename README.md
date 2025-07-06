@@ -24,12 +24,12 @@ No external libraries or frameworks — just clean, simple frontend code.
 2. Make sure the file structure is as follows:
 
 snake-game/
-├── index.html
+├── snake.html
 ├── style.css
 ├── script.js
 └── README.md
 
-3. Open `index.html` in any modern web browser (Chrome, Firefox, Edge, etc.).
+3. Open `snake.html` in any modern web browser (Chrome, Firefox, Edge, etc.).
 
 ---
 
@@ -37,7 +37,7 @@ snake-game/
 
 | File        | Purpose                                |
 |-------------|----------------------------------------|
-| `index.html`| Main HTML structure and layout         |
+| `snake.html`| Main HTML structure and layout         |
 | `style.css` | Styling for canvas, UI, and layout     |
 | `script.js` | Game logic and event handling          |
 | `README.md` | Project overview and instructions      |
